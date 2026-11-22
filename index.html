@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padala Venkata Reddy — Flutter Developer</title>
+<meta name="description" content="Portfolio of Padala Venkata Reddy, Flutter Developer & CSE undergraduate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+<div class="nebula nebula-1"></div>
+<div class="nebula nebula-2"></div>
+<div class="nebula nebula-3"></div>
+
+<!-- ============ SPLASH SCREEN ============ -->
+<div id="splash">
+  <div class="splash-inner">
+    <div class="splash-mark">
+      <svg viewBox="0 0 60 60" class="splash-mark-svg">
+        <rect x="4" y="4" width="52" height="52" rx="10" fill="none" stroke="var(--teal)" stroke-width="3"/>
+        <text x="30" y="40" text-anchor="middle" class="splash-mark-letter">PV</text>
+      </svg>
+    </div>
+    <p class="splash-name" id="splashName"></p>
+    <p class="splash-role">Flutter Developer</p>
+    <div class="splash-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- ============ SIDE NAV RAIL ============ -->
+<nav id="rail" aria-label="Section navigation">
+  <a href="#home" class="rail-logo" aria-label="Home">PV</a>
+  <ul class="rail-list">
+    <li><a href="#home" data-label="Home" class="rail-dot active"></a></li>
+    <li><a href="#education" data-label="Education" class="rail-dot"></a></li>
+    <li><a href="#experience" data-label="Experience" class="rail-dot"></a></li>
+    <li><a href="#projects" data-label="Projects" class="rail-dot"></a></li>
+    <li><a href="#skills" data-label="Skills" class="rail-dot"></a></li>
+    <li><a href="#achievements" data-label="Achievements" class="rail-dot"></a></li>
+    <li><a href="#certificates" data-label="Certificates" class="rail-dot"></a></li>
+    <li><a href="#contact" data-label="Contact" class="rail-dot"></a></li>
+  </ul>
+</nav>
+
+<!-- ============ MOBILE TOP BAR ============ -->
+<header id="mobile-bar">
+  <a href="#home" class="mobile-logo">PV</a>
+  <button id="mobile-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<div id="mobile-menu">
+  <a href="#home">Home</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+
+  <!-- ============ HOME ============ -->
+  <section id="home" class="section home-section">
+    <div class="home-grid">
+      <div class="home-text">
+        <p class="eyebrow">Computer Science &amp; Engineering · Aditya University</p>
+        <h1>Padala Venkata<br>Reddy</h1>
+        <p class="home-tagline">I build clean, responsive mobile apps with Flutter — from booking platforms to
+          live sports trackers — and wire them up to real backends with Firebase and REST APIs.</p>
+        <div class="home-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#projects" class="btn btn-ghost">See projects</a>
+        </div>
+        <dl class="home-stats">
+          <div><dt>7.29</dt><dd>CGPA / 10</dd></div>
+          <div><dt>5★</dt><dd>on HackerRank ×5</dd></div>
+          <div><dt>2027</dt><dd>Graduating</dd></div>
+        </dl>
+      </div>
+      <div class="home-photo">
+        <div class="photo-frame tilt glow-ring">
+          <img src="profile.jpeg" alt="Portrait of Padala Venkata Reddy">
+        </div>
+        <span class="photo-chip chip-1">Flutter &amp; Dart</span>
+        <span class="photo-chip chip-2">Firebase</span>
+        <span class="photo-chip chip-3">REST APIs</span>
+        <span class="photo-chip chip-4">UI/UX Design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-grid" style="display: flex; flex-direction: column; gap: 20px;">
+      <div class="edu-card">
+        <div class="edu-main">
+          <h3>B.Tech in Computer Science &amp; Engineering</h3>
+          <p class="edu-org">Aditya University, Andhra Pradesh</p>
+          <p class="edu-dates">2023 - 2027</p>
+        </div>
+        <div class="edu-cgpa">
+          <span class="edu-cgpa-num">7.29</span>
+          <span class="edu-cgpa-label">CGPA / 10</span>
+        </div>
+      </div>
+      
+      <div class="edu-card">
+        <div class="edu-main">
+          <h3>12th Grade (Intermediate)</h3>
+          <p class="edu-org">Sri Chaitanya Junior College, Vijayawada</p>
+          <p class="edu-dates">2021 - 2023</p>
+        </div>
+        <div class="edu-cgpa">
+          <span class="edu-cgpa-num">805</span>
+          <span class="edu-cgpa-label">Marks / 1000</span>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-main">
+          <h3>10th Grade (SSC)</h3>
+          <p class="edu-org">Sri Chaitanya EM School, Tapeswaram</p>
+          <p class="edu-dates">2020 - 2021</p>
+        </div>
+        <div class="edu-cgpa">
+          <span class="edu-cgpa-num">600</span>
+          <span class="edu-cgpa-label">Marks / 600</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-card">
+      <div class="exp-head">
+        <div>
+          <h3>Flutter Developer Intern</h3>
+          <p class="exp-org">Technical Hub Pvt Ltd · Surampalem</p>
+        </div>
+        <p class="exp-dates">May 2026 — Jul 2026</p>
+      </div>
+      <ul class="exp-list">
+        <li>Developed responsive and user-friendly mobile application interfaces using Flutter and Dart.</li>
+        <li>Implemented reusable UI components and navigation across multiple application screens.</li>
+        <li>Integrated REST APIs to fetch, display, and manage application data.</li>
+        <li>Worked with Firebase for authentication, database operations, and backend integration.</li>
+        <li>Debugged and tested applications to improve performance, functionality, and user experience.</li>
+        <li>Followed clean and modular coding practices while working with Git/GitHub for version control.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+      <article class="project-card tilt">
+        <h3>QuickFix</h3>
+        <p class="project-desc">A service-booking mobile app connecting customers with nearby plumbers,
+          electricians, carpenters and other service providers.</p>
+        <ul class="project-points">
+          <li>Location-based provider discovery with ratings, reviews and booking flow.</li>
+          <li>Responsive, reusable Flutter UI with auth and role-based customer/provider views.</li>
+          <li>Backend services managing users, providers, bookings and service requests.</li>
+        </ul>
+        <div class="project-tags">
+          <span>Flutter</span><span>Dart</span><span>Firebase</span><span>REST API</span><span>Google Maps API</span>
+        </div>
+      </article>
+      <article class="project-card tilt">
+        <h3>Cricket Scorer Pro</h3>
+        <p class="project-desc">A digital cricket scoring app connecting players and organizers with live
+          match tracking and team management tools.</p>
+        <ul class="project-points">
+          <li>Location-based cricket ground discovery and venue navigation via Google Maps API.</li>
+          <li>Reusable Flutter UI with secure auth and personalized player/team dashboards.</li>
+          <li>Firebase and REST APIs powering real-time scores and match statistics.</li>
+        </ul>
+        <div class="project-tags">
+          <span>Flutter</span><span>Dart</span><span>Firebase</span><span>REST API</span><span>Google Maps API</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-category-grid">
+      
+      <div class="skill-category-card">
+        <h3>Languages</h3>
+        <div class="skill-items">
+          <div class="skill-card tilt">
+            <i class="devicon-c-plain colored"></i>
+            <span>C</span>
+          </div>
+          <div class="skill-card tilt">
+            <i class="devicon-java-plain colored"></i>
+            <span>Java</span>
+          </div>
+          <div class="skill-card tilt">
+            <i class="devicon-python-plain colored"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-card tilt">
+            <i class="devicon-sqldeveloper-plain colored"></i>
+            <span>SQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category-card">
+        <h3>Frameworks &amp; Tech</h3>
+        <div class="skill-items">
+          <div class="skill-card tilt">
+            <i class="devicon-flutter-plain colored"></i>
+            <span>Flutter</span>
+          </div>
+          <div class="skill-card tilt">
+            <i class="devicon-dart-plain colored"></i>
+            <span>Dart</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category-card">
+        <h3>Databases</h3>
+        <div class="skill-items">
+          <div class="skill-card tilt">
+            <i class="devicon-mysql-plain colored"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="skill-card tilt">
+            <i class="devicon-mongodb-plain colored"></i>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category-card">
+        <h3>Data Viz</h3>
+        <div class="skill-items">
+          <div class="skill-card tilt">
+            <i class="fa-solid fa-chart-bar" style="color: #F2C811; font-size: 2.5rem; margin-bottom: 12px;"></i>
+            <span>Power BI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category-card">
+        <h3>Developer Tools</h3>
+        <div class="skill-items">
+          <div class="skill-card tilt">
+            <i class="devicon-git-plain colored"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-card tilt">
+            <i class="devicon-github-original colored"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="skill-card tilt">
+            <i class="devicon-vscode-plain colored"></i>
+            <span>VS Code</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section id="achievements" class="section">
+    <h2 class="section-title">Achievements</h2>
+    <ul class="achieve-list">
+      <li>
+        <span class="achieve-mark">★</span>
+        <span>Earned 5★ ratings in SQL, C, C++, Java and Python on HackerRank.</span>
+      </li>
+      <li>
+        <span class="achieve-mark">★</span>
+        <span>HackerRank certifications in SQL (Basic), Java (Basic) and C# (Basic).</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section id="certificates" class="section">
+    <h2 class="section-title">Certificates</h2>
+    <div class="cert-grid">
+      <div class="cert-card tilt">
+        <h3>MongoDB Associate Developer</h3>
+        <p>MongoDB</p>
+      </div>
+      <div class="cert-card tilt">
+        <h3>Oracle Java</h3>
+        <p>Oracle</p>
+      </div>
+      <div class="cert-card tilt">
+        <h3>GitHub Foundation</h3>
+        <p>GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-grid">
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <p class="form-intro">Have a project in mind, or just want to say hello? Fill this in and it'll
+          reach me directly.</p>
+
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" class="contact-input" name="name" placeholder="Your full name" required>
+
+        <label for="cf-mobile">Mobile number</label>
+        <input type="tel" id="cf-mobile" class="contact-input" name="mobile" placeholder="+91 XXXXX XXXXX" required>
+
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" class="contact-input" name="email" placeholder="you@example.com" required>
+
+        <label for="cf-desc">Description</label>
+        <textarea id="cf-desc" class="contact-input" name="description" rows="4" placeholder="What would you like to talk about?" required></textarea>
+
+        <button type="submit" class="btn btn-primary form-submit">Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-links">
+        <div class="contact-block">
+          <h3>Reach me</h3>
+          <div class="link-row">
+            <a class="contact-line profile-link" href="mailto:padalavenkatareddy2006@gmail.com"><i class="fa-solid fa-envelope"></i> padalavenkatareddy2006@gmail.com</a>
+            <a class="contact-line profile-link" href="tel:+919533964433"><i class="fa-solid fa-phone"></i> +91 95339 64433</a>
+          </div>
+        </div>
+
+        <div class="contact-block">
+          <h3>Coding profiles</h3>
+          <div class="link-row">
+            <a href="https://github.com/VenkataReddy2006" target="_blank" rel="noopener noreferrer" class="profile-link" data-fill="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://leetcode.com/u/VenkataReddy2006/" target="_blank" rel="noopener noreferrer" class="profile-link" data-fill="LeetCode"><i class="fa-solid fa-code"></i> LeetCode</a>
+            <a href="https://www.codechef.com/users/venkat_2006" target="_blank" rel="noopener noreferrer" class="profile-link" data-fill="CodeChef"><i class="fa-solid fa-utensils"></i> CodeChef</a>
+            <a href="https://codeforces.com/profile/venkatareddy2006" target="_blank" rel="noopener noreferrer" class="profile-link" data-fill="Codeforces"><i class="fa-solid fa-chart-simple"></i> Codeforces</a>
+            <a href="https://www.hackerrank.com/profile/venkatareddy2006" target="_blank" rel="noopener noreferrer" class="profile-link" data-fill="HackerRank"><i class="fa-brands fa-hackerrank"></i> HackerRank</a>
+            <a href="https://www.geeksforgeeks.org/profile/venkat4433" target="_blank" rel="noopener noreferrer" class="profile-link" data-fill="GeeksforGeeks"><i class="fa-solid fa-laptop-code"></i> GeeksforGeeks</a>
+          </div>
+        </div>
+
+        <div class="contact-block">
+          <h3>Social</h3>
+          <div class="link-row">
+            <a href="https://www.linkedin.com/in/padala-venkata-reddy-425458236/" target="_blank" rel="noopener noreferrer" class="profile-link" data-fill="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/venkata_reddy_18/" target="_blank" rel="noopener noreferrer" class="profile-link" data-fill="Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/share/1LnFYr3EMm/" target="_blank" rel="noopener noreferrer" class="profile-link" data-fill="Facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Padala Venkata Reddy.</p>
+    <button id="exportBtn" type="button">Site owner: export inquiries (.csv)</button>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
